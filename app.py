@@ -5,7 +5,6 @@ from flask import Flask
 # Connect to Redis
 app = Flask(__name__)
 
-
 @app.route("/hello/<name>")
 def hello(name):
     return json.dumps({"message": f"Hello {name.capitalize()}s"})
