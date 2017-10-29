@@ -4,8 +4,6 @@ RUN apk add --no-cache \
         build-base \
         linux-headers
 
-
-
 WORKDIR /code
 ADD . /code
 
