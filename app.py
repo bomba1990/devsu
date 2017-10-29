@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/hello/<name>")
 def hello(name):
-    return json.dumps({"message": f"Hello {name.capitalize()}s"})
+    return json.dumps({"message": f"Hello {name.capitalize()}"})
 
 
 if __name__ == "__main__":
